@@ -1,11 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import { SchemaBase } from 'src/database/schema';
 
 @Schema()
-export class User {
-  @Prop({ unique: true })
-  id: string;
-
+export class User extends SchemaBase<User> {
   @Prop({ unique: true })
   email: string;
 
@@ -17,4 +15,4 @@ export class User {
 }
 
 export const userSchema = SchemaFactory.createForClass(User);
-export type UserDocument = User | Document;
+export type UserDocument = User & Document;
