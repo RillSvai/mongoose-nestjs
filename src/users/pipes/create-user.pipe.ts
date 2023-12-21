@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable, PipeTransform } from '@nestjs/common';
-import { CreateUserDto } from '../create-user.dto';
+import { CreateUserDto } from '../dto/create-user.dto';
 import { User } from 'src/users/schemas/user.schema';
 import { UsersRepository } from 'src/users/users.repository';
 import { v4 as uuidv4 } from 'uuid';

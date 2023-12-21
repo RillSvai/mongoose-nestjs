@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { SchemaBase } from 'src/database/schema';
+import { SchemaBase } from '../../database/schema';
 
 @Schema()
 export class User extends SchemaBase<User> {

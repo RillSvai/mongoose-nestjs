@@ -11,9 +11,9 @@ import {
 import { UsersService } from './users.service';
 import { User } from './schemas/user.schema';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UserByIdPipe } from './dto/pipes/user-by-id.pipe';
+import { UserByIdPipe } from './pipes/user-by-id.pipe';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { CreateUserPipe } from './dto/pipes/create-user.pipe';
+import { CreateUserPipe } from './pipes/create-user.pipe';
 
 @Controller('users')
 export class UsersController {

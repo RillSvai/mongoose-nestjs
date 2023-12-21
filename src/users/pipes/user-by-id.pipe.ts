@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, PipeTransform } from '@nestjs/common';
-import { User } from 'src/users/schemas/user.schema';
-import { UsersRepository } from 'src/users/users.repository';
+import { User } from '../schemas/user.schema';
+import { UsersRepository } from '../users.repository';
 
 @Injectable()
 export class UserByIdPipe implements PipeTransform<string, Promise<User>> {
